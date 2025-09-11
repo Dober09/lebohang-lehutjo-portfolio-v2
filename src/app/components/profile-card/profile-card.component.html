@@ -1,0 +1,79 @@
+<article 
+class="backdrop-blur-md
+                bg-[#626262]/70
+                md:bg-white/20
+                transition-all
+                ease-out
+                backface-visible
+                perspective-distant
+                mx-auto
+                w-[320px]
+                rounded-md
+                shadow-lg
+                z-10"
+                >
+
+    <div class="flex justify-center  relative  bottom-7"> 
+      <img src="assets/profile.png" alt="lebohang-lehutjo" class="w-20 h-20 md:w-28 md:h-28 rounded-full border-2 border-white object-cover">
+    </div>
+
+    <div class="flex flex-col justify-center items-center md:mx-3 mt-[-10px] ">
+      <p class="font-medium  text-xl text-[#060606] md:text-white font-poppins-black">Lebohang <span class="text-white">Lehutjo</span></p>
+      <p class="text-white text-[17px] font-bold mt-2 md:text-[#626262] font-poppins-semi text-center">Software Developer | .Net & Angular </p> 
+      @if(aboutActive){
+      <p class="font-poppins-thin text-center px-1.5 text-sm text-[#060606]">I am driven by a relentless passion for creating innovative solutions that solve complex problems.
+         Through online resources,tutorials and wethink<span class="text-[#626262]/90">code_</span>
+          I have gained a comprehehsive understanding of software development principles,data structures,
+           algoruthms, and object object-oriented programming.</p>
+          }@else {
+
+           
+
+       <p class=" mt-1.5 font-poppins-thin text-sm">Building scalable mobile &  web solutions</p>
+      <p class="font-poppins-thin  mt-1 text-sm">Crafting clean code .Net and Angular</p>
+      <p class="text-center font-poppins-thin text-sm ">Passionate about API integration and user-friendly design</p> 
+          }
+    </div>
+    <div class="flex justify-around  mt-5"> 
+        <button class="backdrop-opacity-70 bg-[#060606]/20 shadow-2xl backdrop-invert
+         rounded-md w-20 font-poppins-semi text-white text-sm py-1 border-white border-1" (click)="onAbout()">
+         @if(aboutActive){
+          Profile
+         }@else {
+
+          About me
+
+         }
+        
+        </button>
+       
+        <button class="backdrop-opacity-70 bg-white/90
+          backdrop-invert rounded-md w-20
+          shadow-2xl
+           font-poppins-semi
+           text-black 
+          text-sm 
+           py-1
+           border-black
+           border-1" 
+           (click)="onClicked()"
+           
+           >@if(isClicked){Projects}@else {skills}</button>
+
+      </div>
+          <p class="text-right mt-2 pb-1.5 text-xs font-thin md:text-black mr-2 text-white ">Based in South Africa</p>
+
+
+    
+      <!-- <h1 class="font-bold text-md md:text-2xl text-[#060606]">Frontend Developer</h1>
+      <p 
+        class="text-center p-2.5">
+        As a software developer, I am driven by a relentless passion for 
+        creating innovative solutions that solve complex problems. Through 
+        online resources,tutorials and 
+        <a href="" class="hover:underline hover:text-[#060606]">wethink<span class="text-[#060606] ">code_</span></a> 
+        I have gained a comprehehsive understanding of software development principles,data structures, algoruthms, 
+        and object object-oriented programming.</p>
+    </div> -->
+
+</article>

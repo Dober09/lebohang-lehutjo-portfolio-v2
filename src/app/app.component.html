@@ -1,0 +1,106 @@
+<main class="relative">
+  <app-header/>
+  
+  <section class="grid lg:grid-cols-2 grid-cols-1 relative">
+
+      <div class="relative bottom-7  md:bottom-28">
+        <app-profile-card  (btnClick)="btnClicked($event)"/>
+      </div>
+
+      
+      @if(isBtnClicked){
+        <div class="xl:flex xl:items-start xl:flex-wrap">
+            
+          <app-skill-card class="lg:w-sm"/>
+          <app-tools-card class=""/>
+      
+       <div class="mt-14 mb-6  md:my-16 lg:my-5 xl:my-44  col-span-2basis-5xl basis-full">
+
+          <div class="bg-[#626262]/20 backface-visible perspective-distant p-3 shadow-2xl rounded-md mx-2.5 space-y-4 ">
+            <h2 class="text-xl font-poppins-black ml-1.5  pt-2 text-[#626262]">Connect Here</h2>
+            <div class="flex  justify-around pb-3">
+              <div class="bg-white rounded-full">
+                <img src="assets/linkedin.png" alt="linkedin" class="w-16">
+              </div>
+              <div class="relative ">
+                <!-- <div class="w-16 h-16  animate-ping bg-white/70 rounded-full"></div> -->
+                <img src="assets/github.png" alt="github" class="w-16 bg-white rounded-full"> 
+              </div>
+
+              <div class="flex flex-col justify-center items-center  ">
+
+              
+              <img src="assets/loading.gif" alt="loading">
+              <p class="font-poppins-semi text-[#060606]">Who let the dog out ?</p>
+
+              </div>
+              
+              
+            </div>
+            
+          </div>
+      </div>
+
+        </div> 
+
+    }
+      @else {
+
+         <div >
+          
+         
+              <app-project  />
+          
+     
+        </div>
+        
+
+      }
+      <div class=" lg:absolute lg:top-80 lg:left-18 xl:left-40 2xl:left-72  ">
+        <app-contact-form/>
+      </div>
+
+
+        @if(isBtnClicked == false){
+      <div class="mt-12 mb-6  md:mt-16 lg:mt-5 xl:mt-44  col-span-2">
+      <div class="bg-[#626262]/20 backface-visible perspective-distant p-3 shadow-2xl rounded-md mx-2.5 space-y-4">
+        <h2 class="text-xl font-poppins-black ml-1.5  pt-2 text-[#626262]">Connect Here</h2>
+        <div class="flex  justify-around pb-3">
+          <div class="bg-white rounded-full">
+            <img src="assets/linkedin.png" alt="linkedin" class="w-16">
+          </div>
+          <div class="relative ">
+            <!-- <div class="w-16 h-16  animate-ping bg-white/70 rounded-full"></div> -->
+            <img src="assets/github.png" alt="github" class="w-16 bg-white rounded-full"> 
+          </div>
+
+           <div class="flex flex-col justify-center items-center  ">
+
+          
+          <img src="assets/loading.gif" alt="loading">
+          <p class="font-poppins-semi text-[#060606]">Who let the dog out ?</p>
+
+          </div>
+          
+          
+        </div>
+        
+      </div>
+      </div>}
+
+      
+      
+     
+      
+      
+
+  </section>
+ 
+  
+  
+ 
+  
+
+  
+  
+</main>

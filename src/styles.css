@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+@font-face{
+    font-family: poppins-black;
+    src: url('assets/font/Poppins-Black.ttf')
+}
+
+@font-face{
+    font-family: poppins-semibold;
+    src: url('assets/font/Poppins-SemiBold.ttf')
+}
+
+@font-face{
+    font-family: poppins-thin;
+    src: url('assets/font/Poppins-ExtraLight.ttf')
+}
+
+
+
+@theme{
+
+    --font-poppins-black: poppins-black;
+    --font-poppins-semi: poppins-semibold;
+    --font-poppins-thin: poppins-thin;
+}

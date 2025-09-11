@@ -1,0 +1,22 @@
+<article>
+    <header>
+        <h2 class="text-xl font-poppins-black md:mt-7 ml-1 mb-3 ">What I Offer</h2>
+    </header>
+    <div class="flex flex-col gap-8">
+        @for(skill of skills;track skill.title){
+        
+            <section class="flex space-x-2 mx-3 bg-white/50 backdrop-blur-lg rounded-md shadow-[#626262] shadow-sm z-0 hover:z-10 p-5 perspective-near  ">
+                <img
+                class="w-16 h-16 perspective-distant md:perspective-dramatic "
+                [src]="skill.image"
+                [alt]="skill.title">
+                <div >
+                    <p class="text-md font-poppins-semi font-bold ">{{skill.title}}</p>
+                    <p class=" font-poppins-thin ">{{skill.description}}</p>
+                </div>
+            </section>
+    }
+
+    </div>
+    
+</article>

@@ -1,0 +1,21 @@
+<article class="my-7">
+    <header>
+        <h2 class="text-xl font-poppins-black ml-1 mb-3 ">Tools I Use</h2>
+    </header>
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-10 p-2 place-content-center">
+
+    @for(tool of tools;track tool.name){
+ <div class="flex gap-1.5 items-center justify-center">
+        <div>
+            <img [src]="tool.image" [alt]="tool.name" class="w-12 ">
+        </div>
+        <div>
+            <p class="text-[#626262]/70 font-poppins-semi font-bold">{{tool.name}}</p>
+            <!-- <p class="w-64">{{tool.description}}</p> -->
+        </div>
+    </div>
+    }
+   
+  
+    </section>
+</article>

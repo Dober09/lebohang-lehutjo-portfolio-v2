@@ -1,0 +1,52 @@
+ /* <div class="row-span-2 bg-[#626262]/20 backface-visible perspective-distant p-3 shadow-2xl rounded-md ">
+            <p class="font-poppins-semi text-lg text-[#060606] mb-3">Morabaraba Game</p>
+
+            <div class="flex justify-center">
+                <!-- <img src="assets/profile.png" alt="profile"> -->
+ 
+                <video autoplay loop  class="rounded-md perspective-distant">
+                    <source src="assets/video/morabaraba.webm" type="video/mp4" class="h-42"/>
+                </video>
+            </div>
+
+           
+            <p class="my-3 font-poppins-thin text-[#060606] ">A faithful digital implementation of the traditional African two-player strategy board game.
+                 This project served as a challenge to explore game development fundamentals
+                 , including turn-based logic, win-state validation.</p>
+            
+            <div class="flex items-center gap-4">
+                <img src="assets/hashtag.png" alt="C#" class="w-10 ">
+                <p class="font-poppins-thin font-extrabold flex flex-wrap items-center">
+                    <span class="bg-[#626262] p-1 text-white rounded-md">.NET MAUI</span>
+                    <span class="bg-[#626262] p-1 text-white rounded-md m-1">ASP.NET Core</span>
+                    <span class="bg-[#626262] p-1 text-white rounded-md">REST API</span>
+                 </p>
+            </div>
+        </div>
+        <!-- The mobile app -->
+        <div class=" bg-[#626262]/20 backface-visible perspective-distant p-3 shadow-2xl rounded-md">
+            <p class="font-poppins-semi text-lg text-[#060606] mb-3">MobileKoisk</p>
+
+            <div>
+                <!-- <img src="assets/profile.png" alt="profile"> -->
+ 
+                <video  autoplay loop  class="rounded-md perspective-distant ">
+                    <source src="assets/video/mobilekiosk.mp4" type="video/mp4"/>
+                </video>
+            </div>
+
+           
+            <p class="my-3 font-poppins-thin text-[#060606]">A retail solution built with .NET MAUI that streamlines the checkout process.
+               The app uses device camera APIs for product scanning and connects to inventory
+               systems through RESTful APIs built with ASP.NET Core.</p>
+            
+            <div class="flex items-center gap-4">
+                <img src="assets/hashtag.png" alt="C#" class="w-10 ">
+                <p class="font-poppins-thin font-extrabold flex flex-wrap items-center">
+                    <span class="bg-[#626262] p-1 text-white rounded-md">.NET MAUI</span>
+                    <span class="bg-[#626262] p-1 text-white rounded-md m-1">ASP.NET Core</span>
+                    <span class="bg-[#626262] p-1 text-white rounded-md">REST API</span>
+                 </p>
+            </div>
+        </div>
+        */
