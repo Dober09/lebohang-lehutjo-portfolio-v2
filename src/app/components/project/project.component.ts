@@ -20,8 +20,8 @@ export class ProjectComponent {
         "HTML",
         "Typescript"
       ],
-      demo:'',
-      gitlink:''
+      demo:'https://morabaraba-game.vercel.app/',
+      gitlink:'https://github.com/Dober09/morabaraba-game'
     },
     
     {
@@ -36,7 +36,7 @@ export class ProjectComponent {
         "ASP.NET Core"
       ],
       demo:'',
-      gitlink:''
+      gitlink:'https://github.com/Dober09/MobileKoisk'
     },
 
      {
@@ -48,8 +48,8 @@ export class ProjectComponent {
       languages:[
         "Angular"
       ],
-      demo:'',
-      gitlink:''
+      demo:'https://sunnyside-iota-one.vercel.app/',
+      gitlink:'https://github.com/Dober09/sunnyside'
     },
   ]
 
