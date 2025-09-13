@@ -20,6 +20,7 @@ export class ProfileCardComponent {
 
   onAbout(){
     this.aboutActive = !this.aboutActive
+   // slight delay to allow DOM update
   }
 
 

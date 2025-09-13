@@ -1,56 +1,59 @@
-<main class=" xl:mx-10">
+<!-- <main class=" xl:mx-10">
   <app-header/>
   
-  <section class="grid grid-cols-1 lg:grid-cols-2 relative">
+  <section class="grid grid-cols-1  lg:grid-cols-3  gap-3 relative ">
+    
+      
 
-        <app-profile-card (btnClick)="btnClicked($event)"
+      
+           <app-profile-card (btnClick)="btnClicked($event)"
                           class="relative 
                                  bottom-7
-                                 md:bottom-32"/>
+                                 left-14
+                                 sm:left-50
+                                 md:left-0
+                                 md:bottom-36"/>
+            
+
         
-          @if(!isBtnClicked){
-            <div>
+
+        
+        
+          @if(isBtnClicked){  
+            
+            <div class=" lg:col-span-2 pb-4 mt-68 md:mt-0"> 
                 <app-project />
             </div>
           }@else {
-            <div class="flex flex-col md:flex-row items-center md:items-start">
-              <app-skill-card />
+              
+            <div class=" 
+            pb-4
+                          grid
+                          grid-cols-1
+                          lg:grid-cols-2
+                          xl:grid-rows-2
+                        lg:col-span-2">
+              <app-skill-card class="xl:row-span-2" />
               <app-tools-card />
+              <app-footer class="lg:col-span-2" />
             </div>
+            
+          
+            
+            
+
           }
-      
-        <div class="mx-auto lg:absolute lg:top-72 lg:left-16 xl:left-64">
+       
+        <div class="left-10 lg:absolute lg:top-72 lg:left-0 xl:left-32 bg-amber-500">
           <app-contact-form  />
         </div>
 
-        <div class="mt-6">
-           <div class="bg-[#626262]/20 backface-visible perspective-distant p-3 shadow-2xl rounded-md mx-2.5 space-y-4">
-           <h2 class="text-xl font-poppins-black ml-1.5  pt-2 text-[#626262]">Connect Here</h2>
-           <div class="flex  justify-around pb-3">
-          
-            <div class=" w-10">
-              <a href="https://za.linkedin.com/in/lebohang-lehutjo" target="_blank">
-              <img src="assets/linkedin.png" alt="linkedin" class="w-10 md:w-16 bg-white rounded-full">
-              </a>
-            </div>
+       @if(!isBtnClicked){
+         <app-footer class="lg:relative lg:bottom-32 xl:bottom-44 col-span-2 "/>
 
+        }
 
-            <div class="relative w-10 ">
-              <a href="https://github.com/Dober09" target="_blank">
-                  <img src="assets/github.png" alt="github" class="w-10 md:w-16 bg-white rounded-full"> 
-              </a>
-            </div>
-
-           <div class="flex flex-col justify-center items-center  ">
-            <img src="assets/loading.gif" alt="loading">
-            <p class="font-poppins-semi text-[#060606]">Who let the dog out ?</p>
-          </div>
-          
-          
-        </div>
-
-        </div>
-        </div>
+        
           
 
    
@@ -70,4 +73,39 @@
 
   
   
+</main> -->
+
+<main class="xl:mx-10">
+  <app-header/>
+
+  <section class="flex flex-col items-center justify-center lg:grid lg:grid-cols-3 gap-3 relative">
+
+    <div class="w-full flex justify-center items-center lg:block mb-80 lg:mb-0 z-50 ">
+      <app-profile-card 
+        (btnClick)="btnClicked($event)"
+        class="absolute top-1 lg:top-[-120px]  lg:left-20 md:top-[-140px]"
+      />
+    </div>
+
+    @if(!isBtnClicked){
+      <div id="projects" class="w-full lg:col-span-2 pb-4">
+        <app-project />
+      </div>
+    }@else{
+      <div id="skills" class="w-full pb-4 grid grid-cols-1 md:grid-cols-2 xl:grid-rows-2 lg:col-span-2">
+        <app-skill-card class="xl:row-span-2" />
+        <app-tools-card  />
+        <app-footer class="md:col-span-2" />
+      </div>
+    }
+
+    <div class="w-full mx-auto  lg:absolute lg:top-72 xl:left-[50px] ">
+      <app-contact-form />
+    </div>
+
+    @if(!isBtnClicked){
+      <app-footer class="lg:relative lg:bottom-32 xl:bottom-44  w-full col-span-2"/>
+    }
+
+  </section>
 </main>
