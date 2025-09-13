@@ -14,7 +14,7 @@ import { FooterComponent } from "./components/footer/footer.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'lebohang-lehutjo-portfolio';
+  title = 'lebohang lehutjo';
   isBtnClicked = false
   isLoading = false
 
